@@ -6,21 +6,17 @@
  * @flow strict-local
  */
 
-import React, {useEffect, useState} from 'react';
-import CustomLoader from './components/CustomLoader';
+import React from 'react';
 
-import ScrollHeader from './components/HeaderScroll';
-import ImageScroller from './components/ImageScroller';
-import Test2 from './components/Test2';
-import UpSwiper from './components/UpSwiper';
+import {NavigationContainer} from '@react-navigation/native';
+import AnimateNavigator from './components/Navigator/AnimationStack';
 
-const App = () => {
-  const [loading, setLoading] = useState(true);
-  // return <ScrollHeader />;
-  // return <ImageScroller />;
-  // return <CustomLoader loading={loading} />;
-  return <UpSwiper />;
-  // return <Test2 />;
+const App = ({}) => {
+  return (
+    <NavigationContainer>
+      <AnimateNavigator />
+    </NavigationContainer>
+  );
 };
 
 export default App;
