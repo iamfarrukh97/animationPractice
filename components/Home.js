@@ -68,6 +68,14 @@ const storiesData = [
     userAvatar: require('@assets/StoriesAssets/user4.jpeg'),
     stories: [
       {
+        storyId: 5,
+        storyResource: require('@assets/StoriesAssets/story10.jpeg'),
+      },
+      {
+        storyId: 6,
+        storyResource: require('@assets/StoriesAssets/story11.jpeg'),
+      },
+      {
         storyId: 1,
         storyResource: require('@assets/StoriesAssets/story6.jpeg'),
       },

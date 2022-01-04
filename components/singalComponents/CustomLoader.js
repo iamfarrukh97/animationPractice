@@ -7,6 +7,7 @@ import {
   Text,
   Easing,
   Button,
+  StyleSheet,
 } from 'react-native';
 LOADER_MAX_SIZE = 220;
 LOADER_MIN_SIZE = 120;
@@ -97,15 +98,16 @@ const CustomLoader = () => {
       {loading && (
         <View
           style={{
+            ...StyleSheet.absoluteFill,
             flex: 1,
-            position: 'absolute',
-            top: 0,
-            bottom: 0,
-            left: 0,
-            right: 0,
+            // position: 'absolute',
+            // top: 0,
+            // bottom: 0,
+            // left: 0,
+            // right: 0,
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            width: '100%',
-            height: '100%',
+            // width: '100%',
+            // height: '100%',
             justifyContent: 'center',
             alignItems: 'center',
           }}>

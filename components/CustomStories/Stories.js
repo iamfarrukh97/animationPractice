@@ -3,8 +3,7 @@ import {View, Text, Image, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 const storySize = 100;
 const storyAroundCircleSize = 105;
-const Stories = ({story}) => {
-  console.log('story', story);
+const Stories = ({story, stories}) => {
   const navigation = useNavigation();
 
   return (
@@ -21,7 +20,10 @@ const Stories = ({story}) => {
         }}>
         <TouchableOpacity
           onPress={() =>
-            navigation.navigate('StoriesStack', {screen: 'ViewStory'})
+            navigation.navigate('StoriesStack', {
+              screen: 'ViewStory',
+              params: {story, stories},
+            })
           }>
           <View
             style={{
